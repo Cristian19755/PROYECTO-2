@@ -1,0 +1,124 @@
+    
+            WriteLINE("Hello World!" + " ARCHIVO CON ERRORES");
+
+    int incremental = 1;
+            WriteLINE("El incremental es : " + incremental);
+            incremental++;
+            incremental--;
+
+            int edad = 18;
+            edad++; //tiene el valor de 19
+            edad--; //tiene el valor 18
+            int anio = 2023;
+
+            WriteLINE("EDAD: " +edad);
+            WriteLINE("ANIO: " + anio);
+
+
+
+            int a = 1;
+            int b = 2;
+            Boolean c = true;
+
+            /***
+             * ESTO ES LA PARTE 1 PARA VERIFICAR LAS TABLAS DE SIMBOLOS
+             */
+            WriteLINE(a + " - " + b + " - " + c);
+
+            if (true) {
+                /*if 1*/
+                if (true) {
+                    // if 2
+                    if (true)
+                    {
+                        /*if 3*/
+
+                        int d,e,f,g = 10*1*1*1/1-10+(1+1+1+1+1+1+1+1+1+1);
+
+                        if (false)
+                        {
+                            WriteLINE("Debe imprimir esto aunque sea falso");
+                        } else { 
+                        
+                            WriteLINE("Funciona la declaración multiple: " + "si");                        
+                        }
+                        WriteLINE("Tu nota del archivo sencillo es: " + g);
+                        WriteLINE("Si y solo si d , e, f tienen 10 en la tabla de simbolos, de lo contrario tienes 5");
+
+                    
+                }
+            }
+
+            /*
+            *ERRORES LEXICOS LINEA 53 
+            */
+
+$@#
+            //Ejemplo de declaración tipo 1
+            int vector1[] = new int[4]; //se crea un vector de 4 posiciones, con 0 en cada posición
+                                        //Ejemplo de declaración tipo 2
+            string vector2[] = { "hola", "Mundo" }; //vector de 2 posiciones, con "Hola" y "Mundo"
+
+            string vector2[] = { "hola", "Mundo" }; //vector de 2 posiciones, con "Hola" y "Mundo"
+            int vectorNumero[] = { 2020, 2021, 2022 };
+            vector2[0] = "OLC1 ";
+            vector2[1] = "2do Semestre "+vectorNumero[1];
+
+
+            if (x > 50)
+            {
+                WriteLine("Mayor que 50");
+                //Más sentencias
+            }
+            else if (x <= 50 && x > 0)
+            {
+                WriteLine("Menor que 50");
+                if (x > 25)
+                {
+                    WriteLine("Número mayor que 25");
+                    //Más sentencias
+                }
+                else
+                {
+                    WriteLine("Número menor que 25");
+                    //Más sentencias
+                }
+                //Más sentencias
+            }
+            else
+            {
+                WriteLine("Número negativo");
+                //Más sentencias
+            }
+
+
+            int _edad = 18;
+            switch (_edad)
+                            {
+                Case 10:
+                WriteLine("Tengo 10 anios.");
+                            // mas sentencias
+                            Break;
+                            Case 18:
+                WriteLine("Tengo 18 anios.");
+                            // mas sentencias
+                            Case 25:
+                WriteLine("Tengo 25 anios.");
+                            // mas sentencias
+                            Break;
+                        Default:
+                            WriteLine("No se que edad tengo. :(");
+                            // mas sentencias
+                            Break;
+                        }
+        /* Salida esperada
+        Tengo 18 anios.
+        No se que edad tengo. :(
+
+
+
+        */
+
+
+
+            WriteLINE("Hello World!" + " ME RECUPERE EJECUTE TODO, BUEN TRABAJO VEAMOS LA TABLA DE SIMBOLOS"); $@#

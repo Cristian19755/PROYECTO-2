@@ -1,0 +1,488 @@
+digraph AST {
+	NODE0 [label="\"Hello World!\""]
+	NODE1 [label="\" ARCHIVO CON ERRORES\""]
+	NODE2 [label="+"]
+	NODE2 -> NODE0
+	NODE2 -> NODE1
+	NODE3 [label=WRITELINE]
+	NODE3 -> NODE2
+	INICIO [label=INICIO fillcolor="red:ORANGE" fontcolor=WHITE gradientangle=45 style=filled]
+	INICIO -> NODE3
+	NODE4 [label=1]
+	NODE5 [label=incremental]
+	NODE6 [label=int]
+	NODE6 -> NODE4
+	NODE6 -> NODE5
+	NODE7 [label=ASIGNACION]
+	NODE7 -> NODE6
+	INICIO -> NODE7
+	NODE8 [label="\"El incremental es : \""]
+	NODE9 [label=incremental]
+	NODE10 [label="+"]
+	NODE10 -> NODE8
+	NODE10 -> NODE9
+	NODE11 [label=WRITELINE]
+	NODE11 -> NODE10
+	INICIO -> NODE11
+	NODE12 [label=incremental]
+	NODE13 [label="++"]
+	NODE13 -> NODE12
+	INICIO -> NODE13
+	NODE14 [label=incremental]
+	NODE15 [label="--"]
+	NODE15 -> NODE14
+	INICIO -> NODE15
+	NODE16 [label=18]
+	NODE17 [label=edad]
+	NODE18 [label=int]
+	NODE18 -> NODE16
+	NODE18 -> NODE17
+	NODE19 [label=ASIGNACION]
+	NODE19 -> NODE18
+	INICIO -> NODE19
+	NODE20 [label=edad]
+	NODE21 [label="++"]
+	NODE21 -> NODE20
+	INICIO -> NODE21
+	NODE22 [label="//tiene el valor de 19"]
+	NODE23 [label=COMENTARIO]
+	NODE23 -> NODE22
+	INICIO -> NODE23
+	NODE24 [label=edad]
+	NODE25 [label="--"]
+	NODE25 -> NODE24
+	INICIO -> NODE25
+	NODE26 [label="//tiene el valor 18"]
+	NODE27 [label=COMENTARIO]
+	NODE27 -> NODE26
+	INICIO -> NODE27
+	NODE28 [label=2023]
+	NODE29 [label=anio]
+	NODE30 [label=int]
+	NODE30 -> NODE28
+	NODE30 -> NODE29
+	NODE31 [label=ASIGNACION]
+	NODE31 -> NODE30
+	INICIO -> NODE31
+	NODE32 [label="\"EDAD: \""]
+	NODE33 [label=edad]
+	NODE34 [label="+"]
+	NODE34 -> NODE32
+	NODE34 -> NODE33
+	NODE35 [label=WRITELINE]
+	NODE35 -> NODE34
+	INICIO -> NODE35
+	NODE36 [label="\"ANIO: \""]
+	NODE37 [label=anio]
+	NODE38 [label="+"]
+	NODE38 -> NODE36
+	NODE38 -> NODE37
+	NODE39 [label=WRITELINE]
+	NODE39 -> NODE38
+	INICIO -> NODE39
+	NODE40 [label=1]
+	NODE41 [label=a]
+	NODE42 [label=int]
+	NODE42 -> NODE40
+	NODE42 -> NODE41
+	NODE43 [label=ASIGNACION]
+	NODE43 -> NODE42
+	INICIO -> NODE43
+	NODE44 [label=2]
+	NODE45 [label=b]
+	NODE46 [label=int]
+	NODE46 -> NODE44
+	NODE46 -> NODE45
+	NODE47 [label=ASIGNACION]
+	NODE47 -> NODE46
+	INICIO -> NODE47
+	INICIO -> Boolean
+	NODE48 [label=true]
+	NODE49 [label=c]
+	NODE50 [label=ASIGNACION]
+	NODE50 -> NODE48
+	NODE50 -> NODE49
+	INICIO -> NODE50
+	NODE52 [label="/***
+             * ESTO ES LA PARTE 1 PARA VERIFICAR LAS TABLAS DE SIMBOLOS
+             */"]
+	NODE53 [label=COMENTARIO]
+	NODE53 -> NODE52
+	INICIO -> NODE53
+	NODE54 [label=a]
+	NODE55 [label="\" - \""]
+	NODE56 [label="+"]
+	NODE56 -> NODE54
+	NODE56 -> NODE55
+	NODE57 [label=b]
+	NODE58 [label="+"]
+	NODE58 -> NODE56
+	NODE58 -> NODE57
+	NODE59 [label="\" - \""]
+	NODE60 [label="+"]
+	NODE60 -> NODE58
+	NODE60 -> NODE59
+	NODE61 [label=c]
+	NODE62 [label="+"]
+	NODE62 -> NODE60
+	NODE62 -> NODE61
+	NODE63 [label=WRITELINE]
+	NODE63 -> NODE62
+	INICIO -> NODE63
+	NODE64 [label=true]
+	NODE65 [label="/*if 1*/"]
+	NODE66 [label=COMENTARIO]
+	NODE66 -> NODE65
+	NODE67 [label=true]
+	NODE68 [label="// if 2"]
+	NODE69 [label=COMENTARIO]
+	NODE69 -> NODE68
+	NODE70 [label=true]
+	NODE71 [label="/*if 3*/"]
+	NODE72 [label=COMENTARIO]
+	NODE72 -> NODE71
+	NODE73 [label=10]
+	NODE74 [label=1]
+	NODE75 [label="*"]
+	NODE75 -> NODE73
+	NODE75 -> NODE74
+	NODE76 [label=1]
+	NODE77 [label="*"]
+	NODE77 -> NODE75
+	NODE77 -> NODE76
+	NODE78 [label=1]
+	NODE79 [label="*"]
+	NODE79 -> NODE77
+	NODE79 -> NODE78
+	NODE80 [label=1]
+	NODE81 [label="/"]
+	NODE81 -> NODE79
+	NODE81 -> NODE80
+	NODE82 [label=1]
+	NODE83 [label=1]
+	NODE84 [label="+"]
+	NODE84 -> NODE82
+	NODE84 -> NODE83
+	NODE85 [label=1]
+	NODE86 [label="+"]
+	NODE86 -> NODE84
+	NODE86 -> NODE85
+	NODE87 [label=1]
+	NODE88 [label="+"]
+	NODE88 -> NODE86
+	NODE88 -> NODE87
+	NODE89 [label=1]
+	NODE90 [label="+"]
+	NODE90 -> NODE88
+	NODE90 -> NODE89
+	NODE91 [label=1]
+	NODE92 [label="+"]
+	NODE92 -> NODE90
+	NODE92 -> NODE91
+	NODE93 [label=1]
+	NODE94 [label="+"]
+	NODE94 -> NODE92
+	NODE94 -> NODE93
+	NODE95 [label=1]
+	NODE96 [label="+"]
+	NODE96 -> NODE94
+	NODE96 -> NODE95
+	NODE97 [label=1]
+	NODE98 [label="+"]
+	NODE98 -> NODE96
+	NODE98 -> NODE97
+	NODE99 [label=1]
+	NODE100 [label="+"]
+	NODE100 -> NODE98
+	NODE100 -> NODE99
+	NODE101 [label="( )"]
+	NODE101 -> NODE100
+	INICIO [label=INICIO fillcolor="red:ORANGE" fontcolor=WHITE gradientangle=45 style=filled]
+	INICIO -> NODE101
+	NODE102 [label=false]
+	NODE103 [label="\"Debe imprimir esto aunque sea falso\""]
+	NODE104 [label=WRITELINE]
+	NODE104 -> NODE103
+	NODE105 [label="\"Funciona la declaración multiple: \""]
+	NODE106 [label="\"si\""]
+	NODE107 [label="+"]
+	NODE107 -> NODE105
+	NODE107 -> NODE106
+	NODE108 [label=WRITELINE]
+	NODE108 -> NODE107
+	NODE109 [label=IF fillcolor=red fontcolor=WHITE style=filled]
+	NODE110 [label=ELSE]
+	NODE111 [label=IFSTRUCCIONES]
+	NODE112 [label=ELSTRUCCIONES]
+	NODE110 -> NODE112
+	NODE102 -> NODE111
+	NODE111 -> NODE66
+	NODE112 -> NODE108
+	NODE109 -> NODE102
+	NODE109 -> NODE110
+	INICIO -> NODE109
+	NODE113 [label="\"Tu nota del archivo sencillo es: \""]
+	NODE114 [label=g]
+	NODE115 [label="+"]
+	NODE115 -> NODE113
+	NODE115 -> NODE114
+	NODE116 [label=WRITELINE]
+	NODE116 -> NODE115
+	INICIO -> NODE116
+	NODE117 [label="\"Si y solo si d , e, f tienen 10 en la tabla de simbolos, de lo contrario tienes 5\""]
+	NODE118 [label=WRITELINE]
+	NODE118 -> NODE117
+	NODE119 [label="/*
+            *ERRORES LEXICOS LINEA 53 
+            */"]
+	NODE120 [label=COMENTARIO]
+	NODE120 -> NODE119
+	INICIO [label=INICIO fillcolor="red:ORANGE" fontcolor=WHITE gradientangle=45 style=filled]
+	INICIO -> NODE120
+	NODE121 [label="//Ejemplo de declaración tipo 1"]
+	NODE122 [label=COMENTARIO]
+	NODE122 -> NODE121
+	INICIO -> NODE122
+	NODE123 [label=vector1]
+	NODE124 [label="[ ]"]
+	NODE124 -> 4
+	NODE125 [label="VECTOR int"]
+	NODE125 -> NODE124
+	NODE125 -> NODE123
+	NODE126 [label=DECLARACION]
+	NODE126 -> NODE125
+	INICIO -> NODE126
+	NODE127 [label="//se crea un vector de 4 posiciones, con 0 en cada posición"]
+	NODE128 [label=COMENTARIO]
+	NODE128 -> NODE127
+	INICIO -> NODE128
+	NODE129 [label="//Ejemplo de declaración tipo 2"]
+	NODE130 [label=COMENTARIO]
+	NODE130 -> NODE129
+	INICIO -> NODE130
+	NODE131 [label="\"hola\""]
+	NODE132 [label="\"Mundo\""]
+	NODE133 [label=vector2]
+	NODE134 [label="[ ]"]
+	NODE134 -> NODE66
+	NODE134 -> NODE69
+	NODE134 -> NODE72
+	NODE134 -> NODE104
+	NODE134 -> NODE131
+	NODE134 -> NODE132
+	NODE135 [label="VECTOR string"]
+	NODE135 -> NODE134
+	NODE135 -> NODE133
+	NODE136 [label=ASIGNACION]
+	NODE136 -> NODE135
+	INICIO -> NODE136
+	NODE137 [label="//vector de 2 posiciones, con \"Hola\" y \"Mundo\""]
+	NODE138 [label=COMENTARIO]
+	NODE138 -> NODE137
+	INICIO -> NODE138
+	NODE139 [label="\"hola\""]
+	NODE140 [label="\"Mundo\""]
+	NODE141 [label=vector2]
+	NODE142 [label="[ ]"]
+	NODE142 -> NODE139
+	NODE142 -> NODE140
+	NODE143 [label="VECTOR string"]
+	NODE143 -> NODE142
+	NODE143 -> NODE141
+	NODE144 [label=ASIGNACION]
+	NODE144 -> NODE143
+	INICIO -> NODE144
+	NODE145 [label="//vector de 2 posiciones, con \"Hola\" y \"Mundo\""]
+	NODE146 [label=COMENTARIO]
+	NODE146 -> NODE145
+	INICIO -> NODE146
+	NODE147 [label=2020]
+	NODE148 [label=2021]
+	NODE149 [label=2022]
+	NODE150 [label=vectorNumero]
+	NODE151 [label="[ ]"]
+	NODE151 -> NODE147
+	NODE151 -> NODE148
+	NODE151 -> NODE149
+	NODE152 [label="VECTOR int"]
+	NODE152 -> NODE151
+	NODE152 -> NODE150
+	NODE153 [label=ASIGNACION]
+	NODE153 -> NODE152
+	INICIO -> NODE153
+	NODE154 [label="\"OLC1 \""]
+	NODE155 [label=vector2]
+	NODE156 [label="pos: 0"]
+	NODE157 [label=MODIFICAR]
+	NODE157 -> NODE155
+	NODE157 -> NODE156
+	NODE157 -> NODE154
+	INICIO -> NODE157
+	NODE158 [label=x]
+	NODE159 [label=50]
+	NODE160 [label=">"]
+	NODE160 -> NODE158
+	NODE160 -> NODE159
+	NODE161 [label="\"Mayor que 50\""]
+	NODE162 [label=WRITELINE]
+	NODE162 -> NODE161
+	NODE163 [label="//Más sentencias"]
+	NODE164 [label=COMENTARIO]
+	NODE164 -> NODE163
+	NODE165 [label=x]
+	NODE166 [label=50]
+	NODE167 [label="<="]
+	NODE167 -> NODE165
+	NODE167 -> NODE166
+	NODE168 [label=x]
+	NODE169 [label=0]
+	NODE170 [label=">"]
+	NODE170 -> NODE168
+	NODE170 -> NODE169
+	NODE171 [label="&&"]
+	NODE171 -> NODE167
+	NODE171 -> NODE170
+	NODE172 [label="\"Menor que 50\""]
+	NODE173 [label=WRITELINE]
+	NODE173 -> NODE172
+	NODE174 [label=x]
+	NODE175 [label=25]
+	NODE176 [label=">"]
+	NODE176 -> NODE174
+	NODE176 -> NODE175
+	NODE177 [label="\"Número mayor que 25\""]
+	NODE178 [label=WRITELINE]
+	NODE178 -> NODE177
+	NODE179 [label="//Más sentencias"]
+	NODE180 [label=COMENTARIO]
+	NODE180 -> NODE179
+	NODE181 [label="\"Número menor que 25\""]
+	NODE182 [label=WRITELINE]
+	NODE182 -> NODE181
+	NODE183 [label="//Más sentencias"]
+	NODE184 [label=COMENTARIO]
+	NODE184 -> NODE183
+	NODE185 [label=IF fillcolor=red fontcolor=WHITE style=filled]
+	NODE186 [label=ELSE]
+	NODE187 [label=IFSTRUCCIONES]
+	NODE188 [label=ELSTRUCCIONES]
+	NODE186 -> NODE188
+	NODE176 -> NODE187
+	NODE187 -> NODE162
+	NODE187 -> NODE164
+	NODE188 -> NODE182
+	NODE188 -> NODE184
+	NODE185 -> NODE176
+	NODE185 -> NODE186
+	NODE189 [label="//Más sentencias"]
+	NODE190 [label=COMENTARIO]
+	NODE190 -> NODE189
+	NODE191 [label="\"Número negativo\""]
+	NODE192 [label=WRITELINE]
+	NODE192 -> NODE191
+	NODE193 [label="//Más sentencias"]
+	NODE194 [label=COMENTARIO]
+	NODE194 -> NODE193
+	NODE195 [label=IF fillcolor=red fontcolor=WHITE style=filled]
+	NODE196 [label=ELSE]
+	NODE197 [label=IFSTRUCCIONES]
+	NODE198 [label=ELSTRUCCIONES]
+	NODE196 -> NODE198
+	NODE171 -> NODE197
+	NODE197 -> NODE162
+	NODE197 -> NODE164
+	NODE197 -> NODE173
+	NODE198 -> NODE192
+	NODE198 -> NODE194
+	NODE195 -> NODE171
+	NODE195 -> NODE196
+	NODE199 [label=IF fillcolor=red fontcolor=WHITE style=filled]
+	NODE200 [label=ELSE]
+	NODE201 [label=IFSTRUCCIONES]
+	NODE201 -> NODE162
+	NODE201 -> NODE164
+	NODE202 [label=ELSTRUCCIONES]
+	NODE200 -> NODE202
+	NODE160 -> NODE201
+	NODE202 -> NODE195
+	NODE199 -> NODE160
+	NODE199 -> NODE200
+	INICIO [label=INICIO fillcolor="red:ORANGE" fontcolor=WHITE gradientangle=45 style=filled]
+	INICIO -> NODE199
+	NODE203 [label=18]
+	NODE204 [label=_edad]
+	NODE205 [label=int]
+	NODE205 -> NODE203
+	NODE205 -> NODE204
+	NODE206 [label=ASIGNACION]
+	NODE206 -> NODE205
+	INICIO -> NODE206
+	NODE207 [label=_edad]
+	NODE208 [label=10]
+	NODE209 [label="\"Tengo 10 anios.\""]
+	NODE210 [label=WRITELINE]
+	NODE210 -> NODE209
+	NODE211 [label="// mas sentencias"]
+	NODE212 [label=COMENTARIO]
+	NODE212 -> NODE211
+	NODE213 [label=Break]
+	NODE208 -> NODE213
+	NODE208 -> NODE212
+	NODE208 -> NODE210
+	NODE215 [label=18]
+	NODE216 [label="\"Tengo 18 anios.\""]
+	NODE217 [label=WRITELINE]
+	NODE217 -> NODE216
+	NODE218 [label="// mas sentencias"]
+	NODE219 [label=COMENTARIO]
+	NODE219 -> NODE218
+	NODE215 -> NODE219
+	NODE215 -> NODE217
+	NODE221 [label=25]
+	NODE222 [label="\"Tengo 25 anios.\""]
+	NODE223 [label=WRITELINE]
+	NODE223 -> NODE222
+	NODE224 [label="// mas sentencias"]
+	NODE225 [label=COMENTARIO]
+	NODE225 -> NODE224
+	NODE226 [label=Break]
+	NODE221 -> NODE226
+	NODE221 -> NODE225
+	NODE221 -> NODE223
+	NODE228 [label="\"No se que edad tengo. :(\""]
+	NODE229 [label=WRITELINE]
+	NODE229 -> NODE228
+	NODE230 [label="// mas sentencias"]
+	NODE231 [label=COMENTARIO]
+	NODE231 -> NODE230
+	NODE232 [label=Break]
+	NODE233 [label=SWITCH]
+	NODE234 [label=DEFAULT]
+	NODE233 -> NODE234
+	NODE233 -> NODE207
+	NODE233 -> NODE221
+	NODE233 -> NODE215
+	NODE233 -> NODE208
+	NODE234 -> NODE232
+	NODE234 -> NODE231
+	NODE234 -> NODE229
+	INICIO -> NODE233
+	NODE235 [label="/* Salida esperada
+        Tengo 18 anios.
+        No se que edad tengo. :(
+
+
+
+        */"]
+	NODE236 [label=COMENTARIO]
+	NODE236 -> NODE235
+	INICIO -> NODE236
+	NODE237 [label="\"Hello World!\""]
+	NODE238 [label="\" ME RECUPERE EJECUTE TODO, BUEN TRABAJO VEAMOS LA TABLA DE SIMBOLOS\""]
+	NODE239 [label="+"]
+	NODE239 -> NODE237
+	NODE239 -> NODE238
+	NODE240 [label=WRITELINE]
+	NODE240 -> NODE239
+	INICIO -> NODE240
+}

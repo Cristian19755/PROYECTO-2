@@ -1,0 +1,32 @@
+            int a = 1;
+            int b = 2;
+            DOUBLE c = 20 * 0.5;
+
+            /***
+             * ESTO ES LA PARTE 1 PARA VERIFICAR LAS TABLAS DE SIMBOLOS
+             */
+            WriteLine(a + " - " + b + " - " + c);
+
+            if (true) {
+                /*if 1*/
+                if (true) {
+                    // if 2
+                    if (true)
+                    {
+                        /*if 3*/
+
+                        int d,e,f,g = 10*1*1*1/1+(1+1+1+1+1+1+1+1+1+1);
+
+                        if (false)
+                        {
+                            WriteLine("Debe imprimir esto aunque sea falso");
+                        } else { 
+                        
+                            WriteLine("Funciona la declaración multiple: " + "si");                        
+                        }
+                        WriteLine("Tu nota del archivo sencillo es: " + g);
+                        WriteLine("Si y solo si d , e, f tienen 10 en la tabla de simbolos, de lo contrario tienes 5");
+
+                    }
+                }
+            }
